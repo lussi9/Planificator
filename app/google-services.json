@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "61218320421",
+    "project_id": "planificator-d3acf",
+    "storage_bucket": "planificator-d3acf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61218320421:android:411be6f5553f09c3ca4fcc",
+        "android_client_info": {
+          "package_name": "es.upm.etsiinf.planificator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiAJFxJNf8eot7ghmq4_2K4l6WTGI8W-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

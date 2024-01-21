@@ -27,6 +27,9 @@ public interface EventDao {
     @Query("SELECT * FROM Event WHERE date = :date ORDER BY hour ASC")
     LiveData<List<Event>> getEventsByDate(String date);
 
+    @Query("SELECT * FROM Event ORDER BY date ASC")
+    LiveData<List<Event>> getAll();
+
     @Query("SELECT * FROM Event WHERE name = :name")
     LiveData<Event> getEvent(String name);
 }

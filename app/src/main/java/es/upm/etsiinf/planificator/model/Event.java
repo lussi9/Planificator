@@ -35,7 +35,9 @@ public class Event {
     @Expose
     private String description;
 
+    public Event(){
 
+    }
 
     public Event( @NonNull String name, String date, String hour, String description) {
         this.name = name;

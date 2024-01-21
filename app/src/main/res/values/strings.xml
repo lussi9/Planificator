@@ -3,4 +3,24 @@
     <string name="welcome_to">Welcome to</string>
     <string name="planificator">Planificator</string>
     <string name="view_my_calendar">View my calendar</string>
+    <string name="mood_for_the_event">mood for the event</string>
+    <string name="meeting">meeting</string>
+    <string name="_20_20">20:20</string>
+    <string name="new_event">New Event</string>
+    <string name="date">Date</string>
+    <string name="hour">Hour</string>
+    <string name="name">Name</string>
+    <string name="_12_2_2024">12/2/2024</string>
+    <string name="_20_30">20:30</string>
+    <string name="ex_meeting">Ex: Meeting</string>
+    <string name="description">Description</string>
+    <string name="save">save</string>
+    <string name="mood">Mood</string>
+    <string name="ex_meeting_at_class_5101_to_discuss_things">Ex: Meeting at class 5101 to discuss things</string>
+    <string-array name="moods">
+        <item>Happy</item>
+        <item>Angry</item>
+        <item>Serious</item>
+        <item>None</item>
+    </string-array>
 </resources>

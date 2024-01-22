@@ -4,166 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.EventDetails">
+    tools:context=".view.MainActivity">
 
     <TextView
-        android:id="@+id/eventname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="210dp"
-        android:text="@string/eventname"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/welcome_to"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.147" />
 
     <TextView
-        android:id="@+id/dateview"
+        android:id="@+id/recyname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="336dp"
-        android:layout_marginBottom="442dp"
-        android:text="@string/dateview"
-        android:textColor="#686868"
-        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/planificator"
+        android:textColor="#7714B5"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventname"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/datetext"
-        android:layout_width="86dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="239dp"
-        android:layout_marginBottom="442dp"
-        android:text="@string/datetext"
-        android:textColor="#686868"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/dateview"
-        app:layout_constraintTop_toBottomOf="@+id/eventname"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/hourview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="332dp"
-        android:layout_marginBottom="374dp"
-        android:text="@string/hourview"
-        android:textColor="#686868"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateview" />
-
-    <TextView
-        android:id="@+id/hourtext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="274dp"
-        android:layout_marginBottom="374dp"
-        android:text="@string/hourtext"
-        android:textColor="#686868"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/hourview"
-        app:layout_constraintTop_toBottomOf="@+id/datetext" />
-
-    <TextView
-        android:id="@+id/desctext"
-        android:layout_width="294dp"
-        android:layout_height="163dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="152dp"
-        android:text="@string/desctext"
-        android:textColor="#7752B8"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hourview" />
-
-    <ImageView
-        android:id="@+id/imagedown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="35dp"
-        android:contentDescription="@string/detailsimg"
-        app:layout_constraintBottom_toTopOf="@+id/eventname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.245" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/sharebutton"
+    <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="310dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="33dp"
-        android:clickable="true"
+        android:text="@string/view_my_calendar"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desctext"
-        app:srcCompat="?attr/actionModeShareDrawable"
-        android:contentDescription="@string/sharebutton" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="247dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="118dp"
-        android:layout_marginBottom="108dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desctext" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="150dp"
-        android:layout_height="11dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="12dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/datetext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eventname" />
-    
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

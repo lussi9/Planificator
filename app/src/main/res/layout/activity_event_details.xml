@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eventname"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/datetext"
@@ -52,8 +52,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/dateview"
-        app:layout_constraintTop_toBottomOf="@+id/eventname" />
+        app:layout_constraintTop_toBottomOf="@+id/eventname"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/hourview"
@@ -109,14 +111,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="257dp"
         android:layout_marginBottom="35dp"
+        android:contentDescription="@string/detailsimg"
         app:layout_constraintBottom_toTopOf="@+id/eventname"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/detailsimg" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/sharebutton"
@@ -161,4 +164,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eventname" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

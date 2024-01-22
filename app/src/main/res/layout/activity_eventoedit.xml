@@ -148,6 +148,7 @@
         android:id="@+id/button_save"
         android:layout_width="113dp"
         android:layout_height="57dp"
+        android:enabled="false"
         android:text="@string/save"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

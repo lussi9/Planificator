@@ -25,6 +25,7 @@
         android:id="@+id/recydesc"
         android:layout_width="193dp"
         android:layout_height="17dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.564"

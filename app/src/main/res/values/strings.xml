@@ -17,7 +17,17 @@
     <string name="save">save</string>
     <string name="mood">Mood</string>
     <string name="ex_meeting_at_class_5101_to_discuss_things">Ex: Meeting at class 5101 to discuss things</string>
+    <string name="textview">TextView</string>
+    <string name="eventname">EventName</string>
+    <string name="datetext">1/1/2024</string>
+    <string name="dateview">Date:</string>
+    <string name="desctext">Description</string>
+    <string name="hourtext">20:20</string>
+    <string name="hourview">Time:</string>
+    <string name="sharebutton">sharebutton</string>
+    <string name="detailsimg">TODO</string>
     <string-array name="moods">
+        <item>Mood</item>
         <item>Happy</item>
         <item>Angry</item>
         <item>Serious</item>

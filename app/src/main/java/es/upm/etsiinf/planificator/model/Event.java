@@ -35,15 +35,27 @@ public class Event {
     @Expose
     private String description;
 
+    public String getSurl() {
+        return surl;
+    }
+
+    public void setSurl(String surl) {
+        this.surl = surl;
+    }
+
+    @SerializedName("surl")
+    private String surl;
+
     public Event(){
 
     }
 
-    public Event( @NonNull String name, String date, String hour, String description) {
+    public Event( @NonNull String name, String date, String hour, String description, String surl) {
         this.name = name;
         this.date = date;
         this.hour = hour;
         this.description = description;
+        this.surl=surl;
     }
 
     public String getName() {

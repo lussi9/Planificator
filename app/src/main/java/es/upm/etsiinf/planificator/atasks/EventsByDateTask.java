@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +22,7 @@ import es.upm.etsiinf.planificator.view.adapters.EventAdapter;
 
 public class EventsByDateTask extends AsyncTask<Void, Void, FirebaseRecyclerAdapter<Event, EventAdapter.EventViewHolder>> {
 
-
+    public static String urlmoo;
     private RecyclerView recyclerView;
     private DatabaseReference dbref;
     private String date;
@@ -51,6 +52,13 @@ public class EventsByDateTask extends AsyncTask<Void, Void, FirebaseRecyclerAdap
                 holder.name.setText(model.getName());
                 holder.desc.setText(model.getDescription());
                 holder.time.setText(model.getHour());
+                urlmoo = model.getSurl();
+                Glide.with(holder.mood.getContext())
+                        .load(model.getSurl())
+                        .placeholder(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark)
+                        .circleCrop()
+                        .error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal)
+                        .into(holder.mood);
             }
 
             @NonNull
